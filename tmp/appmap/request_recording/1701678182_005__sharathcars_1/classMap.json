@@ -1,0 +1,94 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "getCar",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/Centum1/Sharathcars/service/SharathcarService.java:40"
+                      }
+                    ],
+                    "name": "SharathcarService",
+                    "type": "class"
+                  }
+                ],
+                "name": "service",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "findById",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/Centum1/Sharathcars/repository/SharathcarsRepo.java:-1"
+                      }
+                    ],
+                    "name": "SharathcarsRepo",
+                    "type": "class"
+                  }
+                ],
+                "name": "repository",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "getcarbyID",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/Centum1/Sharathcars/controller/SharathcarController.java:34"
+                      }
+                    ],
+                    "name": "SharathcarController",
+                    "type": "class"
+                  }
+                ],
+                "name": "controller",
+                "type": "package"
+              }
+            ],
+            "name": "Sharathcars",
+            "type": "package"
+          }
+        ],
+        "name": "Centum1",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /sharathcars/{id}"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "select s1_0.id,s1_0.carcode,s1_0.carcolour,s1_0.carmodel,s1_0.carname,s1_0.carowner,s1_0.carvin,s1_0.caryear,s1_0.details,s1_0.mobilenumber,s1_0.price,s1_0.state from resales_cars_list s1_0 where s1_0.id=?"
+      }
+    ]
+  }
+]

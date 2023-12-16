@@ -1,0 +1,4 @@
+name: "Sharathcars"
+appmap_dir: "tmp/appmap"
+packages:
+- path: "com.Centum1.Sharathcars"

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /h2-console/tables.do",
+    "parameters": "(jsessionid)",
+    "status": 200
+  }
+]

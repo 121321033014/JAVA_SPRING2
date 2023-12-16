@@ -1,0 +1,3 @@
+[
+  "select s1_0.id,s1_0.carcode,s1_0.carcolour,s1_0.carmodel,s1_0.carname,s1_0.carowner,s1_0.carvin,s1_0.caryear,s1_0.details,s1_0.mobilenumber,s1_0.price,s1_0.state from resales_cars_list s1_0"
+]

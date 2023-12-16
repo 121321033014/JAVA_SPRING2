@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "GET /h2-console/tables.do",
+    "callee": "SELECT COLUMN_NAME, ORDINAL_POSITION, DATA_TYPE_SQL(?1, ?2, 'TABLE', ORDINAL_POSITION) COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = ?1 AND TABLE_NAME = ?2"
+  },
+  {
+    "caller": "GET /h2-console/tables.do",
+    "callee": "SELECT SEQUENCE_NAME, BASE_VALUE, INCREMENT FROM INFORMATION_SCHEMA.SEQUENCES ORDER BY SEQUENCE_NAME"
+  },
+  {
+    "caller": "GET /h2-console/tables.do",
+    "callee": "SELECT USER_NAME, IS_ADMIN FROM INFORMATION_SCHEMA.USERS ORDER BY USER_NAME"
+  },
+  {
+    "caller": "GET /h2-console/tables.do",
+    "callee": "SELECT VIEW_DEFINITION FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_SCHEMA = ? AND TABLE_NAME = ?"
+  }
+]

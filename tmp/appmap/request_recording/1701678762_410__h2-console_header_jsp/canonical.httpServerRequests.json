@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /h2-console/header.jsp",
+    "parameters": "(jsessionid)",
+    "status": 200
+  }
+]

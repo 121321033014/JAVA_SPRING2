@@ -1,0 +1,79 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "sec-fetch-mode": "cors",
+          "referer": "http://localhost:9092/swagger-ui/index.html",
+          "sec-fetch-site": "same-origin",
+          "accept-language": "en-US,en;q=0.9",
+          "dnt": "1",
+          "accept": "*/*",
+          "sec-ch-ua": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "host": "localhost:9092",
+          "connection": "keep-alive",
+          "accept-encoding": "gzip, deflate, br",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+          "sec-fetch-dest": "empty"
+        },
+        "normalized_path_info": "/v3/api-docs/swagger-config",
+        "path_info": "/v3/api-docs/swagger-config",
+        "protocol": "HTTP/1.1",
+        "request_method": "GET"
+      },
+      "id": 1,
+      "thread_id": 188
+    },
+    {
+      "elapsed": 0.00814592,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Transfer-Encoding": "chunked",
+          "Keep-Alive": "timeout=60",
+          "Connection": "keep-alive",
+          "Date": "Mon, 04 Dec 2023 08:21:38 GMT",
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      },
+      "id": 2,
+      "parent_id": 1,
+      "thread_id": 188
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "GET /v3/api-docs/swagger-config (200) - 13:51:39.080",
+    "app": "Sharathcars",
+    "language": {
+      "name": "java",
+      "version": "17.0.9+8-LTS",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {}
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /v3/api-docs/swagger-config"
+        }
+      ]
+    }
+  ]
+}

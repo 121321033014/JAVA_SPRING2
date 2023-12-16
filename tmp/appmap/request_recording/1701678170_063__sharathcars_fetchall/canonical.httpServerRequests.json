@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /sharathcars/fetchall",
+    "parameters": "()",
+    "status": 200
+  }
+]

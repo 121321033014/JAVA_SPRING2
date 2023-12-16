@@ -1,0 +1,2 @@
+Syntax error found near Identifier (SELECT ... FOR locking clause): select next value for resales_cars_list_seq
+Syntax error found near Identifier (SELECT Results Clause): SELECT COLUMN_NAME, ORDINAL_POSITION, DATA_TYPE_SQL(??, ??, ?, ORDINAL_POSITION) COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = ?? AND TABLE_NAME = ??

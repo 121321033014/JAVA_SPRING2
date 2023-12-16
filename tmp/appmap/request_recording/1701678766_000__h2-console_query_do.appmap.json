@@ -1,0 +1,122 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "sec-fetch-mode": "navigate",
+          "content-length": "36",
+          "referer": "http://localhost:9092/h2-console/query.jsp?jsessionid=2c4ce20b57aaea51cb8973ccd25a3d8f",
+          "sec-fetch-site": "same-origin",
+          "accept-language": "en-US,en;q=0.9",
+          "origin": "http://localhost:9092",
+          "dnt": "1",
+          "sec-fetch-user": "?1",
+          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "sec-ch-ua": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "host": "localhost:9092",
+          "upgrade-insecure-requests": "1",
+          "connection": "keep-alive",
+          "content-type": "application/x-www-form-urlencoded",
+          "cache-control": "max-age=0",
+          "accept-encoding": "gzip, deflate, br",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+          "sec-fetch-dest": "frame"
+        },
+        "path_info": "/h2-console/query.do",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 1,
+      "message": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "jsessionid",
+          "object_id": 750941067,
+          "value": "2c4ce20b57aaea51cb8973ccd25a3d8f"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "sql",
+          "object_id": 364700003,
+          "value": "SELECT * FROM RESALES_CARS_LIST "
+        }
+      ],
+      "thread_id": 191
+    },
+    {
+      "event": "call",
+      "id": 2,
+      "sql_query": {
+        "database_type": "H2",
+        "sql": "SELECT * FROM RESALES_CARS_LIST"
+      },
+      "thread_id": 191
+    },
+    {
+      "elapsed": 0.0006359,
+      "event": "return",
+      "id": 3,
+      "parent_id": 2,
+      "thread_id": 191
+    },
+    {
+      "elapsed": 0.00240175,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Cache-Control": "no-cache"
+        },
+        "status": 200
+      },
+      "id": 4,
+      "parent_id": 1,
+      "thread_id": 191
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /h2-console/query.do (200) - 14:02:46.000",
+    "app": "Sharathcars",
+    "language": {
+      "name": "java",
+      "version": "17.0.9+8-LTS",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {}
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /h2-console/query.do"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT * FROM RESALES_CARS_LIST"
+        }
+      ]
+    }
+  ]
+}

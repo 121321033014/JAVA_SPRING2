@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "POST /h2-console/query.do",
+    "callee": "SELECT * FROM RESALES_CARS_LIST"
+  }
+]

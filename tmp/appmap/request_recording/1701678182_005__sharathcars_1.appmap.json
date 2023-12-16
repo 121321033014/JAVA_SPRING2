@@ -1,0 +1,285 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "sec-fetch-mode": "cors",
+          "referer": "http://localhost:9092/swagger-ui/index.html",
+          "sec-fetch-site": "same-origin",
+          "accept-language": "en-US,en;q=0.9",
+          "dnt": "1",
+          "accept": "*/*",
+          "sec-ch-ua": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "host": "localhost:9092",
+          "connection": "keep-alive",
+          "accept-encoding": "gzip, deflate, br",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+          "sec-fetch-dest": "empty"
+        },
+        "normalized_path_info": "/sharathcars/{id}",
+        "path_info": "/sharathcars/1",
+        "protocol": "HTTP/1.1",
+        "request_method": "GET"
+      },
+      "id": 1,
+      "thread_id": 189
+    },
+    {
+      "defined_class": "com.Centum1.Sharathcars.controller.SharathcarController",
+      "event": "call",
+      "id": 2,
+      "lineno": 34,
+      "method_id": "getcarbyID",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "id",
+          "object_id": 1430713383,
+          "value": "1"
+        }
+      ],
+      "path": "com/Centum1/Sharathcars/controller/SharathcarController.java",
+      "receiver": {
+        "class": "com.Centum1.Sharathcars.controller.SharathcarController",
+        "object_id": 1048033334,
+        "value": "com.Centum1.Sharathcars.controller.SharathcarController@3e77b836"
+      },
+      "static": false,
+      "thread_id": 189
+    },
+    {
+      "defined_class": "com.Centum1.Sharathcars.service.SharathcarService",
+      "event": "call",
+      "id": 3,
+      "lineno": 40,
+      "method_id": "getCar",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "id",
+          "object_id": 1430713383,
+          "value": "1"
+        }
+      ],
+      "path": "com/Centum1/Sharathcars/service/SharathcarService.java",
+      "receiver": {
+        "class": "com.Centum1.Sharathcars.service.SharathcarService",
+        "object_id": 421768790,
+        "value": "com.Centum1.Sharathcars.service.SharathcarService@1923ae56"
+      },
+      "static": false,
+      "thread_id": 189
+    },
+    {
+      "defined_class": "com.Centum1.Sharathcars.repository.SharathcarsRepo",
+      "event": "call",
+      "id": 4,
+      "lineno": -1,
+      "method_id": "findById",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "p0",
+          "object_id": 1430713383,
+          "value": "1"
+        }
+      ],
+      "path": "com/Centum1/Sharathcars/repository/SharathcarsRepo.java",
+      "receiver": {
+        "class": "jdk.proxy4.$Proxy132",
+        "object_id": 1559310489,
+        "value": "org.springframework.data.jpa.repository.support.SimpleJpaRepository@5167f59b"
+      },
+      "static": false,
+      "thread_id": 189
+    },
+    {
+      "event": "call",
+      "id": 5,
+      "sql_query": {
+        "database_type": "H2",
+        "sql": "select s1_0.id,s1_0.carcode,s1_0.carcolour,s1_0.carmodel,s1_0.carname,s1_0.carowner,s1_0.carvin,s1_0.caryear,s1_0.details,s1_0.mobilenumber,s1_0.price,s1_0.state from resales_cars_list s1_0 where s1_0.id=?"
+      },
+      "thread_id": 189
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 6,
+      "parent_id": 5,
+      "thread_id": 189
+    },
+    {
+      "elapsed": 0.00381185,
+      "event": "return",
+      "id": 7,
+      "parent_id": 4,
+      "return_value": {
+        "class": "com.Centum1.Sharathcars.entity.Sharathcar",
+        "object_id": 365324426,
+        "value": "com.Centum1.Sharathcars.entity.Sharathcar@15c6688a"
+      },
+      "thread_id": 189
+    },
+    {
+      "elapsed": 0.00608144,
+      "event": "return",
+      "id": 8,
+      "parent_id": 3,
+      "return_value": {
+        "class": "com.Centum1.Sharathcars.entity.Sharathcar",
+        "object_id": 365324426,
+        "value": "com.Centum1.Sharathcars.entity.Sharathcar@15c6688a"
+      },
+      "thread_id": 189
+    },
+    {
+      "elapsed": 0.00608144,
+      "event": "return",
+      "id": 9,
+      "parent_id": 2,
+      "return_value": {
+        "class": "org.springframework.http.ResponseEntity",
+        "object_id": 1647240502,
+        "value": "<200 OK OK,com.Centum1.Sharathcars.entity.Sharathcar@15c6688a,[]>"
+      },
+      "thread_id": 189
+    },
+    {
+      "elapsed": 0.00680682,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Transfer-Encoding": "chunked",
+          "Keep-Alive": "timeout=60",
+          "Connection": "keep-alive",
+          "Date": "Mon, 04 Dec 2023 08:23:02 GMT",
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      },
+      "id": 10,
+      "parent_id": 1,
+      "thread_id": 189
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "GET /sharathcars/1 (200) - 13:53:02.005",
+    "app": "Sharathcars",
+    "language": {
+      "name": "java",
+      "version": "17.0.9+8-LTS",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {}
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "getCar",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/Centum1/Sharathcars/service/SharathcarService.java:40"
+                        }
+                      ],
+                      "name": "SharathcarService",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "service",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "findById",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/Centum1/Sharathcars/repository/SharathcarsRepo.java:-1"
+                        }
+                      ],
+                      "name": "SharathcarsRepo",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "repository",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "getcarbyID",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/Centum1/Sharathcars/controller/SharathcarController.java:34"
+                        }
+                      ],
+                      "name": "SharathcarController",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "controller",
+                  "type": "package"
+                }
+              ],
+              "name": "Sharathcars",
+              "type": "package"
+            }
+          ],
+          "name": "Centum1",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /sharathcars/{id}"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "select s1_0.id,s1_0.carcode,s1_0.carcolour,s1_0.carmodel,s1_0.carname,s1_0.carowner,s1_0.carvin,s1_0.caryear,s1_0.details,s1_0.mobilenumber,s1_0.price,s1_0.state from resales_cars_list s1_0 where s1_0.id=?"
+        }
+      ]
+    }
+  ]
+}

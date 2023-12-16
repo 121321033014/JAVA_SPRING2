@@ -1,0 +1,138 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "sec-fetch-mode": "navigate",
+          "content-length": "144",
+          "referer": "http://localhost:9092/h2-console/login.jsp?jsessionid=2c4ce20b57aaea51cb8973ccd25a3d8f",
+          "sec-fetch-site": "same-origin",
+          "accept-language": "en-US,en;q=0.9",
+          "origin": "http://localhost:9092",
+          "dnt": "1",
+          "sec-fetch-user": "?1",
+          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "sec-ch-ua": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "host": "localhost:9092",
+          "upgrade-insecure-requests": "1",
+          "connection": "keep-alive",
+          "content-type": "application/x-www-form-urlencoded",
+          "cache-control": "max-age=0",
+          "accept-encoding": "gzip, deflate, br",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+          "sec-fetch-dest": "document"
+        },
+        "path_info": "/h2-console/login.do",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 1,
+      "message": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "jsessionid",
+          "object_id": 820549918,
+          "value": "2c4ce20b57aaea51cb8973ccd25a3d8f"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "language",
+          "object_id": 1702104489,
+          "value": "en"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "setting",
+          "object_id": 2029452744,
+          "value": "Generic H2 (Embedded)"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "name",
+          "object_id": 1875966768,
+          "value": "Generic H2 (Embedded)"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "driver",
+          "object_id": 461680573,
+          "value": "org.h2.Driver"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "url",
+          "object_id": 1582882849,
+          "value": "jdbc:h2:mem:testdb"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "user",
+          "object_id": 294604447,
+          "value": "sa"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "password",
+          "object_id": 2045652709,
+          "value": ""
+        }
+      ],
+      "thread_id": 190
+    },
+    {
+      "elapsed": 0.00398364,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Cache-Control": "no-cache"
+        },
+        "status": 200
+      },
+      "id": 2,
+      "parent_id": 1,
+      "thread_id": 190
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /h2-console/login.do (200) - 14:02:42.273",
+    "app": "Sharathcars",
+    "language": {
+      "name": "java",
+      "version": "17.0.9+8-LTS",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {}
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /h2-console/login.do"
+        }
+      ]
+    }
+  ]
+}

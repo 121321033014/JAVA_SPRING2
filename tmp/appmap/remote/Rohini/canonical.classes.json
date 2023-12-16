@@ -1,0 +1,7 @@
+[
+  "com/Centum1/Sharathcars/controller/SharathcarController",
+  "com/Centum1/Sharathcars/dto/SharathcarRequest",
+  "com/Centum1/Sharathcars/entity/Sharathcar",
+  "com/Centum1/Sharathcars/repository/SharathcarsRepo",
+  "com/Centum1/Sharathcars/service/SharathcarService"
+]

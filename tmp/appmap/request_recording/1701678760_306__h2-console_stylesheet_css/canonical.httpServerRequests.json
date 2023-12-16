@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /h2-console/stylesheet.css",
+    "parameters": "()",
+    "status": 200
+  }
+]

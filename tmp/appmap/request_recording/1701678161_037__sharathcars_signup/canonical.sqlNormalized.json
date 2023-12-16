@@ -1,0 +1,4 @@
+[
+  "insert into resales_cars_list (carcode,carcolour,carmodel,carname,carowner,carvin,caryear,details,mobilenumber,price,state,id) values (?,?,?,?,?,?,?,?,?,?,?,?)",
+  "select next value for resales_cars_list_seq"
+]

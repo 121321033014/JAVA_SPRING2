@@ -1,0 +1,6 @@
+[
+  "information_schema.columns",
+  "information_schema.sequences",
+  "information_schema.users",
+  "information_schema.views"
+]

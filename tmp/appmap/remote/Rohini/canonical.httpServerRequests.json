@@ -1,0 +1,32 @@
+[
+  {
+    "route": "GET /sharathcars/fetchall",
+    "parameters": "()",
+    "status": 200
+  },
+  {
+    "route": "GET /sharathcars/{id}",
+    "parameters": "()",
+    "status": 200
+  },
+  {
+    "route": "GET /swagger-ui/swagger-initializer.js",
+    "parameters": "()",
+    "status": 200
+  },
+  {
+    "route": "GET /v3/api-docs",
+    "parameters": "()",
+    "status": 200
+  },
+  {
+    "route": "GET /v3/api-docs/swagger-config",
+    "parameters": "()",
+    "status": 200
+  },
+  {
+    "route": "POST /sharathcars/signup",
+    "parameters": "()",
+    "status": 201
+  }
+]
